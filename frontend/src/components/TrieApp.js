@@ -39,7 +39,9 @@ function TrieApp() {
 
   return (
     <div className="flex flex-col items-center h-screen w-screen">
+      <a href="https://leetcode.com/problems/implement-trie-prefix-tree/" className="hover:text-blue-500">
         <h2 className="my-4 p-4">208. Implement Trie (Prefix Tree)</h2>
+        </a>
         <div className='p-8 border-x border-y'>
           <form className="my-4">
             <label className="mx-4 justify-center" htmlFor="word">
