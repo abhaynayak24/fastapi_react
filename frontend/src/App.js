@@ -1,18 +1,24 @@
-import TrieApp from "./TrieApp";
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/Home';
+import About from './pages/About';
+import Project from './pages/Project';
+import NavBar from './components/NavBar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <TrieApp />
-        </p>
-      </header>
+      <div>
+      <Router>
+      <NavBar className='flex fixed'/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/home" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/projects" element={<Project/>} />
+        </Routes>
+      </Router>
     </div>
-  );
+  )
 }
 
 export default App;
