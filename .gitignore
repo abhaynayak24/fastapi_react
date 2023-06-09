@@ -10,6 +10,7 @@ build/
 
 # Node.js / NPM
 /node_modules
+node_modules/
 
 # React / Create React App
 /.env
